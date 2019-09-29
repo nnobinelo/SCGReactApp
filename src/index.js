@@ -13,17 +13,7 @@ import 'firebase/firestore'
 import 'firebase/storage'
 import thunk from 'redux-thunk'
 import InitializeScrollTriggers from './components/helpers/InitializeScrollTriggers'
-
-// Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyCzLXRKj4wcAF1jIJOg5EBfRGgoZ2qBij4",
-    authDomain: "simplyconnectedgames-website.firebaseapp.com",
-    databaseURL: "https://simplyconnectedgames-website.firebaseio.com",
-    projectId: "simplyconnectedgames-website",
-    storageBucket: "simplyconnectedgames-website.appspot.com",
-    messagingSenderId: "74831675325",
-    appId: "1:74831675325:web:64da7592fb387e95"
-}
+import firebaseConfig from './firebase/config'
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig)
